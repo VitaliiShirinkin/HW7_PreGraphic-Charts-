@@ -12,8 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
     chart = new QChart;
     chart->legend()->hide();
     chartView = new QChartView;
-    layout = new QGridLayout;
-    layout->addWidget(chartView);
     connect(this, &MainWindow::sgnl_dataDisplay, this, &MainWindow::slot_dataDisplay);
 }
 
